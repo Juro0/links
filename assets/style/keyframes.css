@@ -1,0 +1,14 @@
+@keyframes fromDownSmooth {
+    from {opacity: 0%; transform: translateY(10%);}
+    to {opacity: 100%; transform: translateY(0);}
+}
+
+@keyframes fromLeftSmooth {
+    from {opacity: 0%; transform: translateX(-3%);}
+    to {opacity: 100%; transform: translateY(0);}
+}
+
+@keyframes buttonPopUp {
+    from {transform: scale(100%)}
+    to {transform: scale(105%)}
+}

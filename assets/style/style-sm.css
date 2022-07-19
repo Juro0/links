@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --dark-aqua: #128971;
+    --funny-aqua: #19b99a;
+    --clr-cloud: #f5f5f5;
+    --clr-black: #151515;
+    --clr-smooth: #20202036;
+    --fnt-poppins: 'Poppins', sans-serif;
+    --fnt-mont: 'Montserrat', sans-serif;
+    --fnt-sans: mainSans;
+    --wgt-black: 700;
+    --wgt-bold: 600;
+    --wgt-semi: 500;
+    --wgt-medium: 400;
+
+    --social-instagram: #e056fd;
+    --social-twitter: #1DA1F2;
+    --social-telegram: #feca57;
+    --social-github: #ff6b6b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-cloud);
+    color: var(--clr-concrete);
+    font-family: var(--fnt-mont);
+    overflow: hidden;
+}
+
+*::selection {
+    background-color: none;
+    color: var(--clr-black);
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: mainSans;
+    src: url(../fonts/leaguespartan-bold-webfont.woff);
+}
+
+/* HEAD */
+
+.head {
+    animation: fromDownSmooth 1s ease;
+}
+
+.photo {
+    width: 100%;
+    text-align: center;
+}
+
+#photo {
+    width: 10vh;
+    margin: 8vh 0 3vh;
+}
+
+#photo:hover {
+    transition: all .5s ease;
+    transform: translate(-3px, -3px);
+    cursor: pointer;
+}
+
+.name {
+    width: 100%;
+    text-align: center;
+    color: var(--funny-aqua);
+    font-family: var(--fnt-sans);
+    font-size: 10vw;
+    cursor: default;
+
+    text-shadow: var(--clr-smooth) 0 10px 20px;
+}
+
+.name::selection {
+    background-color: var(--funny-aqua);
+    color: var(--clr-cloud);
+}
+
+
+/* SOCIALS */
+
+.socials {
+    margin: 4vh 0;
+    text-align: center;
+    animation: fromLeftSmooth 1s ease;
+}
+
+.social {
+    margin: 1vh 0;
+    height: 8vh;
+    width: 70vw;
+    border: solid 4px;
+    border-radius: 69rem;
+    font-family: var(--fnt-sans);
+    font-size: 18px;
+    background-color: var(--clr-cloud);
+    cursor: pointer;
+    box-shadow: var(--clr-smooth) 0 10px 10px;
+}
+
+.social:hover {
+    animation: buttonPopUp .5s ease;
+    transform: scale(105%);
+}
+
+#instagram { border-color: var(--social-instagram) }
+
+#twitter { border-color: var(--social-twitter) }
+
+#telegram { border-color: var(--social-telegram) }
+
+#github {border-color: var(--social-github) }
+
+/* LINKS */
+
+.links {
+    margin: 5vh 0;
+    text-align: center;
+    width: 100%;
+    animation: fromDownSmooth 1s ease;
+}
+
+.link {
+    margin: 1vh .5vw;
+    height: 7vh;
+    width: 60vw;
+    border: solid 4px;
+    border-radius: 69rem;
+    font-family: var(--fnt-sans);
+    font-size: 15px;
+    background-color: var(--clr-cloud);
+    cursor: pointer;
+}
+
+.link:hover {
+    animation: buttonPopUp .5s ease;
+    transform: scale(105%);
+}
