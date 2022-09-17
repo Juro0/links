@@ -57,13 +57,13 @@ html, body {
 }
 
 #photo {
-    transition: all .5s ease;
+    transition: all .3s ease;
     width: 7vw;
     margin: 7vh 0 3vh;
 }
 
 #photo:hover {
-    transition: all .5s ease;
+    transition: all .3s ease;
     transform: translate(-3px, -3px);
     cursor: pointer;
 }
@@ -94,7 +94,7 @@ html, body {
 }
 
 .social {
-    transition: all .5s ease;
+    transition: all .3s ease;
     margin: 1vh 0;
     height: 8vh;
     width: 25vw;
@@ -108,7 +108,7 @@ html, body {
 }
 
 .social:hover {
-    transition: all .5s ease;
+    transition: all .3s ease;
     animation: buttonPopUp .5s ease;
     transform: scale(105%);
 }
@@ -131,7 +131,7 @@ html, body {
 }
 
 .link {
-    transition: all .5s ease;
+    transition: all .3s ease;
     margin: 1vh .5vw;
     height: 7vh;
     width: 21vw;
@@ -144,7 +144,7 @@ html, body {
 }
 
 .link:hover {
-    transition: all .5s ease;
+    transition: all .3s ease;
     animation: buttonPopUp .5s ease;
     transform: scale(105%);
 }
