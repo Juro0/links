@@ -16,8 +16,8 @@
     --wgt-medium: 400;
 
     --social-instagram: #e056fd;
-    --social-twitter: #1DA1F2;
-    --social-telegram: #feca57;
+    --social-site: #1DA1F2;
+    --social-whatsapp: #feca57;
     --social-github: #ff6b6b;
 }
 
@@ -115,36 +115,8 @@ html, body {
 
 #instagram { border-color: var(--social-instagram) }
 
-#twitter { border-color: var(--social-twitter) }
+#whatsapp { border-color: var(--social-whatsapp) }
 
-#telegram { border-color: var(--social-telegram) }
+#site { border-color: var(--social-site) }
 
 #github {border-color: var(--social-github) }
-
-/* LINKS */
-
-.links {
-    margin: 5vh 0;
-    text-align: center;
-    width: 100%;
-    animation: fromDownSmooth 1s ease;
-}
-
-.link {
-    transition: all .3s ease;
-    margin: 1vh .5vw;
-    height: 7vh;
-    width: 21vw;
-    border: solid 4px;
-    border-radius: 69rem;
-    font-family: var(--fnt-sans);
-    font-size: 15px;
-    background-color: var(--clr-cloud);
-    cursor: pointer;
-}
-
-.link:hover {
-    transition: all .3s ease;
-    animation: buttonPopUp .5s ease;
-    transform: scale(105%);
-}
