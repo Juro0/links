@@ -22,15 +22,9 @@ $(document).ready(function() {
 
 	});
 
-    $("#twitter").click(function(){
+    $("#whatsapp").click(function(){
 
-		go("https://twitter.com/juri_gemignani");
-
-	});
-
-    $("#telegram").click(function(){
-
-		go("https://t.me/juri_gemignani");
+		go("https://wa.me/+393518760311");
 
 	});
 
@@ -43,12 +37,6 @@ $(document).ready(function() {
     $("#site").click(function(){
 
 		go("https://juro0.github.io/");
-
-	});
-
-    $("#discord").click(function(){
-
-		window.alert("sorry, the discord is temporary unavailable.")
 
 	});
 
