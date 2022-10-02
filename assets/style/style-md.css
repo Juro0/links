@@ -141,7 +141,7 @@ html, body {
 
 .link:hover {
     animation: buttonPopUp .5s ease;
-    transform: scale(105%);
+    transform: scale(102%);
 }
 
 #discord {

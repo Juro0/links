@@ -110,7 +110,7 @@ html, body {
 .social:hover {
     transition: all .3s ease;
     animation: buttonPopUp .3s ease;
-    transform: scale(105%);
+    transform: scale(102%);
 }
 
 #instagram { border-color: var(--social-insta) }
