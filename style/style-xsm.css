@@ -1,0 +1,38 @@
+
+/* LEFT - UP */
+
+.logo {
+    width: 10rem;
+}
+
+.qualifies {
+    font-size: 1.5rem;
+}
+
+.cta {
+    width: 14rem;
+    font-size: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.6rem;
+}
+
+.contact-text {
+    font-size: 1rem;
+}
+
+/* RIGHT - DOWN */
+
+.social-icon {
+    font-size: 1.8rem;
+}
+
+.social-name {
+    font-size: 1.3rem;
+    width: 7rem;
+}
+
+.social-angle {
+    font-size: 2.7rem;
+}

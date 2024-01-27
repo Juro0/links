@@ -1,0 +1,271 @@
+:root {
+
+    /* colors */
+    --clr-blue: #141831;
+    --clr-green: #12b89a;
+    --clr-dark-green: #128971;
+    --clr-white: #efefef;
+    --clr-gray: #d2d2d2;
+
+    /* fonts */
+    --fnt-fjalla: 'Fjalla One', sans-serif;
+    --fnt-lato: 'Lato', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background: var(--clr-blue);
+    display: flex;
+    overflow-x: hidden;
+}
+
+* {
+    transition: .3s ease all;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fnt-lato);
+    cursor: default;
+}
+
+*::selection {
+    background: none;
+}
+
+/* hide */
+
+.hide {
+    display: none !important;
+}
+
+.desktop-hide {
+    display: none;
+}
+
+/* animations */
+
+.reveal {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .6s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: .6s all ease;
+}
+
+/* particles */
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* LEFT - UP */
+
+.left {
+    width: 50%;
+    height: 100%;
+    padding-left: 6rem;
+}
+
+.main-container {
+    position: absolute;
+    top: 10%;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.qualifies {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-family: var(--fnt-fjalla);
+    color: var(--clr-gray);
+    padding: 1.5rem 0;
+}
+
+.qualifies::selection {
+    background: var(--clr-dark-green);
+}
+
+.cta {
+    width: 16rem;
+    aspect-ratio: 6.96/1;
+    border-radius: 100rem;
+    border: 2px solid var(--clr-green);
+    background: none;
+    color: var(--clr-gray);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 48%;
+}
+
+.cta:hover {
+    cursor: pointer;
+    scale: 101%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10.5rem;
+    padding-top: 2rem;
+    position: absolute;
+    top: 67%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact > * {
+    cursor: pointer;
+}
+
+.contact:hover {
+    transform: translateY(-1px);
+}
+
+.contact-icon {
+    padding-right: .8rem;
+    color: var(--clr-green);
+    font-size: 1.7rem;
+}
+
+.contact:hover .contact-icon {
+    color: var(--clr-dark-green);
+}
+
+.contact-text {
+    color: var(--clr-gray);
+    font-size: 1.1rem;
+    font-family: var(--fnt-lato);
+}
+
+/* RIGHT - DOWN */
+
+.right {
+    width: 50%;
+    height: 100%;
+    padding-left: 6rem;
+}
+
+.socials {
+    width: 20rem;
+    height: 24rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    height: 3rem;
+    width: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.social > * {
+    cursor: pointer;
+}
+
+.social-icon, .social-angle {
+    font-size: 2.2rem;
+    color: var(--clr-green);
+}
+
+.social-angle {
+    font-size: 3rem;
+}
+
+.social-name {
+    font-size: 1.6rem;
+    color: var(--clr-white);
+    width: 8rem;
+}
+
+.socials:hover .social:not(:hover) {
+    opacity: .6;
+}
+
+.social:hover .social-icon {
+    color: var(--clr-dark-green);
+}
+
+.social:hover .social-angle {
+    color: var(--clr-dark-green);
+    transform: translateX(2px);
+}
+
+/* NOTIFICATION */
+
+@keyframes vanish-animation {
+    from {opacity: 1}
+    to {opacity: 0; translate: 0 -6px;}
+}
+
+@keyframes appear-animation {
+    from {opacity: 0; translate: 0 6px;}
+    to {opacity: 1}
+}
+
+.vanish {
+    animation: vanish-animation .3s ease-out;
+    opacity: 0;
+}
+
+.appear {
+    animation: appear-animation .3s ease-in;
+    opacity: 1;
+}
+
+#notification {
+    position: fixed;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    width: 10rem;
+    aspect-ratio: 3.5/1;
+    background: var(--clr-white);
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#notification > * {
+    cursor: pointer;
+}
+
+.notification-mark {
+    font-size: 2rem;
+    color: #36f32c;
+    opacity: .9;
+}
+
+.notification-text {
+    font-family: var(--fnt-lato);
+    color: #000;
+}

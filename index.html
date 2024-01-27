@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>links &bull; juri gemignani</title>
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/style-lg.css">
+        <link rel="stylesheet" href="style/style-sm.css" media="screen and (max-width: 850px)">
+        <link rel="stylesheet" href="style/style-xsm.css" media="screen and (max-width: 350px)">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    </head>
+
+    <body>
+        
+        <div id="particles-js"></div>
+
+        <div class="left">
+
+            <div class="main-container">
+                <img src="assets/logotype.png" alt="juri" class="logo">
+                <p class="qualifies">frontend developer</p>
+            </div>
+
+            <button class="cta" onclick="goto('juro0.github.io/')">my site</button>
+
+            <div class="contacts">
+
+                <div class="contact" onclick="copy(this.children[1].innerText)">
+                    <i class="uil uil-envelope contact-icon"></i>
+                    <p class="contact-text">jurigemignani7@gmail.com</p>
+                </div>
+
+                <div class="contact" onclick="copy(this.children[1].innerText)">
+                    <i class="uil uil-whatsapp contact-icon"></i>
+                    <p class="contact-text">+39 351 8760 311</p>
+                </div>
+
+            </div>
+
+            <i class="uil uil-angle-down scroll-down desktop-hide" onclick="goto('#social')"></i>
+
+        </div>
+
+        <div class="right" id="social">
+
+            <div class="socials"></div>
+
+        </div>
+
+        <div id="notification" class="hide" onclick="notification_hide()">
+            <i class="uil uil-check notification-mark"></i>
+            <p class="notification-text">copied!</p>
+        </div>
+
+        <script src="script/notify.js"></script>
+        <script src="script/app.js"></script>
+        <script src="script/particles.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'json/particles.json', ()=>{
+                console.log('callback - particles.json loaded')
+            })
+        </script>
+        
+    </body>
+
+</html>

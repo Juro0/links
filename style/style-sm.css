@@ -1,0 +1,89 @@
+html, body {
+    display: inline-block;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.left, .right {
+    width: 100%;
+}
+
+.desktop-hide {
+    display: inline-block;
+}
+
+/* LEFT - UP */
+
+.left {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.qualifies {
+    padding: 2rem 0;
+}
+
+.cta {
+    top: 42%;
+}
+
+.contacts {
+    top: 52%;
+}
+
+.contact-icon {
+    font-size: 1.9rem;
+    padding-right: 1rem;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+}
+
+@keyframes scroll-loop {
+    0% {text-shadow: 0 -30px 0 rgba(25, 185, 154, .15)}
+    80% {text-shadow: 0 0px 0 rgba(25, 185, 154, .15)}
+    100% {text-shadow: 0 -30px 0 rgba(25, 185, 154, .15)}
+}
+
+.scroll-down {
+    position: absolute;
+    top: 76.5%;
+    font-size: 8rem;
+    color: var(--clr-green);
+    cursor: pointer;
+    animation: scroll-loop infinite ease 1.5s;
+}
+
+/* RIGHT - DOWN */
+
+.right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.socials {
+    position: static;
+    transform: none;
+    width: 80%;
+    height: 30rem;
+}
+
+.social {
+    width: 100%;
+}
+
+.socials:hover .social:not(:hover) {
+    opacity: 1;
+}

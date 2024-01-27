@@ -1,0 +1,24 @@
+{
+    "list": [
+        {
+            "icon": "globe",
+            "name": "my website",
+            "url": "juro0.github.io/"
+        },
+        {
+            "icon": "whatsapp",
+            "name": "whatsapp",
+            "url": "wa.me/+393518760311"
+        },
+        {
+            "icon": "instagram",
+            "name": "instagram",
+            "url": "instagram.com/juri_gemignani"
+        },
+        {
+            "icon": "github",
+            "name": "github",
+            "url": "github.com/juro0"
+        }
+    ]
+}
